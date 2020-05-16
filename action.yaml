@@ -1,4 +1,4 @@
-name: sync
+name: Git to GCS
 description: Sync Google Cloud Storage buckets with git repo folders
 inputs:
   secrets:
