@@ -7,6 +7,4 @@ inputs:
 runs:
   using: docker
   image: Dockerfile
-  args:
-    - ${{ inputs.secrets }}
 branding.icon: database
