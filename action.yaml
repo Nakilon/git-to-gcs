@@ -7,4 +7,6 @@ inputs:
 runs:
   using: docker
   image: Dockerfile
-branding.icon: database
+branding:
+  icon: database
+  color: blue
