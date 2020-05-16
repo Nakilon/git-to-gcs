@@ -1,5 +1,5 @@
 require "pp"
 
-pp Dir[?*]
-pp ENV
+pp ENV["secrets"][1,20]
+abort
 
