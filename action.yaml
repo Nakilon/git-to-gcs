@@ -2,7 +2,7 @@ name: sync
 description: Sync Google Cloud Storage buckets with git repo folders
 inputs:
   secrets:
-    description: Space delimited list of buckets and access tokens
+    description: Space delimited list of buckets and base64 of corresponding access key files
     required: true
 runs:
   using: docker
