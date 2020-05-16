@@ -1,0 +1,14 @@
+name: sync
+description: Sync Google Cloud Storage buckets with git repo folders
+inputs:
+  secrets:
+    description: Space delimited list of buckets and access tokens
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  pre: echo "::add-mask::${{ inputs.secrets }}"
+  entrypoint: "apk add ruby && ruby main.rb"
+  args:
+    - ${{ inputs.secrets }}
+branding.icon: database
